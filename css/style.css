@@ -49,10 +49,10 @@ a:focus, a:hover {
 /*-- //Reset-Code --*/
 /*-- banner --*/
 .w3-banner-top{
-    background: url(../images/backgrd.jpg) no-repeat 0px 0px;
+    background: url(../images/ban6.jpg) no-repeat 0px 0px;
     background-size: cover;
 	min-height:750px;
-	    position: relative;
+	position: relative;
 }
 .agileinfo-dot{
     background: url(../images/dott.png)repeat 0px 0px;
