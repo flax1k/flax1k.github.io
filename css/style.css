@@ -49,10 +49,10 @@ a:focus, a:hover {
 /*-- //Reset-Code --*/
 /*-- banner --*/
 .w3-banner-top{
-    background: url(../images/ban6666.jpg) no-repeat 0px 0px;
+    background: url(../images/ban777.jpg) no-repeat 0px 0px;
     background-size: cover;
 	min-height:750px;
-	position: relative;
+	    position: relative;
 }
 .agileinfo-dot{
     background: url(../images/dott.png)repeat 0px 0px;
@@ -102,7 +102,11 @@ ul.address li ul.agileits-address-text li:nth-child(1) {
     list-style-type: none;
 }
 .w3-banner-text p {
-    width: 50%;
+    width: 80%;
+    color: #fff;
+    font-size: 2.8em;
+    letter-spacing:1px;
+    font-family: 'Raleway', sans-serif;
 }
 ul.agileits-address-text li a {
     color:rgba(255, 255, 255, 0.76);
@@ -129,6 +133,13 @@ ul.agileits-address-text li a {
 }
 .w3-banner-grid-right p {
     color:#c5c2c2;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+
+.w3-banner-text-white p {
+    color:#fff;
     font-size: 1em;
     line-height: 1.8em;
     letter-spacing: 1px;
@@ -1083,9 +1094,9 @@ h4.modal-title {
  .contact{
 	background: url(../images/bbb66.jpg) no-repeat 0px 0px;
     	background-size: cover;
-	min-height:750px;
- }
+	min-height:742px;
 
+ }
 .contact-left.agileits-w3layouts {
     padding: 0;
 } 
@@ -1507,7 +1518,7 @@ h4.modal-title {
     padding: 22px;
 	}
 	.w3-banner-text p {
-    width: 100%;
+    width: 70%;
 	}
 	ul.agileits-address-text li span {
     margin: 1em;
