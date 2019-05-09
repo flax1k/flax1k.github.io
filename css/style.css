@@ -51,7 +51,7 @@ a:focus, a:hover {
 .w3-banner-top{
     background: url(../images/ban777.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height:850px;
+    min-height:950px;
     position: relative;
 }
 
@@ -62,7 +62,7 @@ a:focus, a:hover {
     -moz-background-size: 2px;
     -o-background-size: 2px;
     -ms-background-size: 2px;
-    min-height: 850px;
+    min-height: 950px;
 }
 .col-md-6.w3-banner-grid-left {
     width: 50%;
