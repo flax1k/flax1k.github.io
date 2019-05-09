@@ -734,10 +734,10 @@ i.fa.fa-users,i.fa.fa-code,i.fa.fa-laptop{
 }
 /*-- skills --*/
 .skills{
- background: url(../images/skill2.jpg) no-repeat 0px 0px;
-    background-size: cover;
-	min-height:500px;
-	}
+   background: url(../images/skill2.jpg) no-repeat 0px 0px;
+   background-size: cover;
+   min-height:750px;
+}
 .skills-bar .bar_group__bar.thin::before, .skills-bar .bar_group__bar.thick::before {
   display: block;
   content: '';
