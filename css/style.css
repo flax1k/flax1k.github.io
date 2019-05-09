@@ -97,7 +97,7 @@ ul.address li ul.agileits-address-text li:nth-child(1) {
 .w3-banner-img img {
     width: 133px;
     height: 133px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 .w3-right-addres-1 li {
     list-style-type: none;
