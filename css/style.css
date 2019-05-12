@@ -49,7 +49,7 @@ a:focus, a:hover {
 /*-- //Reset-Code --*/
 /*-- banner --*/
 .w3-banner-top{
-    background: url(../images/ban777.jpg) no-repeat 0px 0px;
+    background: url(../images/ban777.jpg) no-repeat fixed 0px 0px;
     background-size: cover;
     min-height:950px;
     position: relative;
@@ -734,9 +734,9 @@ i.fa.fa-users,i.fa.fa-code,i.fa.fa-laptop{
 }
 /*-- skills --*/
 .skills{
-   background: url(../images/skill2.jpg) no-repeat 0px 0px;
+   background: url(../images/skill2.jpg) no-repeat fixed 0px 0px;
    background-size: cover;
-   min-height:750px;
+   min-height:950px;
 }
 .skills-bar .bar_group__bar.thin::before, .skills-bar .bar_group__bar.thick::before {
   display: block;
@@ -842,6 +842,13 @@ background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+
 /*-- //skills --*/
 /*-- //about --*/
 /*-- gallery --*/
+.gallery{
+   /*--background: #212121;--*/
+   background: url(../images/ban6.jpg) no-repeat 0px 0px;
+   background-size: cover;
+   min-height:750px;
+}
+
 
 .item-desc {
     background-color: rgba(0,0,0,0.5);
@@ -958,16 +965,17 @@ ul.simplefilter {
 
 .jm-item-wrapper {
 	position: relative;
-    padding: 7px;
-    background: #FFFFFF;
-    border: 1px solid #eee;
+    padding: 1px;
+    border: 1px solid #000;
+    width: 334px;
+    height: 334px;
 }
 
 .jm-item-image {
-	    position: relative;
+	position: relative;
     overflow: hidden;
-    width: 340px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
 }
 
 .jm-item-image img {
@@ -1884,4 +1892,3 @@ h4.modal-title {
     top: 16px;
 	}
 }
-/*-- /responsive design --*/
