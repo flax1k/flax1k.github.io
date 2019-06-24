@@ -27,9 +27,21 @@
 <!-- banner -->
 	<div class="w3-banner-top">
 	<div class="agileinfo-dot">
-
-
 		<div class="w3-banner-grids">
+			<div class="w3layouts_menu">
+				<nav class="cd-stretchy-nav edit-content">
+					<a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
+					<ul>
+						<li><a href="#home" class="scroll"><span>Home</span></a></li>
+						<li><a href="#about" class="scroll"><span>About</span></a></li>
+						<li><a href="#experiences" class="scroll"><span>Experiences</span></a></li>
+						<li><a href="#skills" class="scroll"><span>Skills</span></a></li> 
+						<li><a href="#projects" class="scroll"><span>Projects</span></a></li>
+						<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+					</ul> 
+					<span aria-hidden="true" class="stretchy-nav-bg"></span>
+				</nav> 
+			</div>
 			<div class="col-md-6 w3-banner-grid-left">
 				<div class="w3-banner-img">
 					<img src="images/ban661.jpg" alt="img">
@@ -102,7 +114,7 @@
 				<section class='wrap'>
 					<div class='wrap_right'>
 					  <div class='bar_group'>
-						<div class='bar_group__bar thin' label='HTML' show_values='true' tooltip='true' value='550'></div>
+						<div class='bar_group__bar thin' label='HTML' show_values='true' tooltip='true' value='530'></div>
 						<div class='bar_group__bar thin' label='jQuery' show_values='true' tooltip='true' value='335'></div>
 						<div class='bar_group__bar thin' label='PHP' show_values='true' tooltip='true' value='175'></div>
 						<div class='bar_group__bar thin' label='Python' show_values='true' tooltip='true' value='445'></div>
@@ -117,7 +129,7 @@
 				<section class='wrap'>
 					<div class='wrap_right'>
 					  <div class='bar_group'>
-						<div class='bar_group__bar thin' label='Java' show_values='true' tooltip='true' value='550'></div>
+						<div class='bar_group__bar thin' label='Java' show_values='true' tooltip='true' value='530'></div>
 						<div class='bar_group__bar thin' label='C#' show_values='true' tooltip='true' value='400'></div>
 						<div class='bar_group__bar thin' label='Mysql' show_values='true' tooltip='true' value='295'></div>
 						<div class='bar_group__bar thin' label='AJAX' show_values='true' tooltip='true' value='100'></div>
@@ -141,7 +153,7 @@
 						<div class="jm-item-image">
 							<img src="images/g0.jpg" alt="property" />
 							<span class="jm-item-overlay"> </span>
-							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal1">flaON project</a></div>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal">flaON project</a></div>
 						</div>						
 					</div>
 				</div>
@@ -199,6 +211,20 @@
 	</div>
 </div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>flaON project</h3>
+								<p>This is the continuation of the Avalon project, but more refined and more sophisticated. <br />Basically, it's a smart home project, conceived & built by me, an under permanent development, functional and active project that runs in my home.
+								<br />Its core is based on python threads that run on two raspberry pi. That core exchange data with terminals, sensors and actuators, and the whole system gives me more confort and modernity.</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
 
 <!-- contact -->
 <div class="contact" id="contact">
@@ -224,25 +250,19 @@
 <!-- start-smoth-scrolling -->
 <script src="js/SmoothScroll.min.js"></script>
 <!-- text-effect -->
-		<script type="text/javascript" src="js/jquery.transit.js"></script> 
-		<script type="text/javascript" src="js/jquery.textFx.js"></script> 
-		<script type="text/javascript">
-			$(document).ready(function() {
-					$('.test').textFx({
-						type: 'fadeIn',
-						iChar: 100,
-						iAnim: 1000
-					});
-			});
-		</script>
+<script type="text/javascript" src="js/jquery.transit.js"></script> 
+<script type="text/javascript" src="js/jquery.textFx.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.test').textFx({type: 'fadeIn',iChar: 100,iAnim: 1000});
+	});
+</script>
 <!-- //text-effect -->
 <!-- menu-js --> 	
 	<script src="js/modernizr.js"></script>	
-<!-- //menu-js --> 	
-
-
+	<script src="js/menu.js"></script>	
+<!-- //menu-js --> 
 <script type="text/javascript" src="js/move-top.js"></script>
-
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -253,22 +273,20 @@
 	});
 </script>
 <!-- start-smoth-scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
+<script type="text/javascript">
+	$(document).ready(function() {
+	/*
+		var defaults = {
+		containerID: 'toTop', // fading element id
+		containerHoverID: 'toTopHover', // fading element hover id
+		scrollSpeed: 1200,
+		easingType: 'linear' 
+		};
+	*/
 								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-
-
+	$().UItoTop({ easingType: 'easeOutQuart' });
+				
+	});
+</script>
 </body>
 </html>
