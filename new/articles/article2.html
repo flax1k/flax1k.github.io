@@ -1,0 +1,59 @@
+<html itemscope="" itemtype="http://schema.org/Article">
+<head><meta charset="utf-8">
+
+<title>Flavius Cristiu (flaX1k)</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="../img/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Oswald" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta property="og:title" itemprop="name" content="Flavius Cristiu (flax1k)">
+<meta property="og:image" itemprop="image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200">
+<meta property="og:description" itemprop="description" content="Developer, Employee, Dreamer. This is where I put the stuff I make.">
+
+</head>
+<body>
+<header class="nav" itemscope="" itemtype="http://schema.org/Person">
+	<div><img src="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" alt="flax1k avatar" itemprop="image"></div>
+	<div>
+		<div class="name">Flavius Cristiu</div>
+		<div class="handle">@flax1k</div>
+	</div>
+	<p>Cyber developer & infiltration hybrid.</p><br />
+	<a href="https://twitter.com/flax1k" class="big icon-twitter" target="_blank"></a>
+	<a href="https://github.com/flax1k" class="big icon-github" target="_blank"></a>
+	<a href="about1.html" class="big icon-mail"></a><br />	
+	<a href="../index.html" class="big material-icons">home</a>
+</header>
+<section>
+<div class='postwrapper'><div class="post"><h1>Pi-hole a black hole for Internet advertisements</h1><br />
+<p>For a better online experience, without advertisements and sneaky tracking codes that invade my privacy and monitor my activities, I chose to install on one of my raspberry Pi, the ad-blocker Pi-hole.</p><p><img src="../pics/pihole.png" width="150" height="255" alt="pi hole"></p>
+<p><em>Pi Hole is a network-wide ad blocker. In a typical home environment, this can cut out almost all ads to all devices in your home, without having to install an ad blocker on every single device.</em></p>
+<h2>One-Step Automated Install</h2>
+<p>Those who want to get started quickly and conveniently may install Pi-hole using the following command:</p>
+<pre><code class="lang-java">curl -sSL https://install.pi-hole.net | bash</code></pre>
+<h2>Post-install: Make your network take advantage of Pi-hole</h2>
+<p>Once the installer has been run, you will need to configure your router to have DHCP clients use Pi-hole as their DNS server which ensures that all devices connecting to your network will have content blocked without any further intervention.<br />
+If your router does not support setting the DNS server, you can use Pi-hole's built-in DHCP server; just be sure to disable DHCP on your router first (if it has that feature available).<br />
+As a last resort, you can always manually set each device to use Pi-hole as their DNS server.</p>
+<h2>The Command Line Interface</h2>
+<p>The pihole command has all the functionality necessary to be able to fully administer the Pi-hole, without the need of the Web Interface. It's fast, user-friendly, and auditable by anyone with an understanding of bash.</p>
+<p><img src="../pics/pihole.gif" alt="PI hole bash"></p>
+<h2>The Web Interface Dashboard</h2>
+<p>This optional dashboard allows you to view stats, change settings, and configure your Pi-hole. It's the power of the Command Line Interface, with none of the learning curve!</p>
+<p><img src="../pics/piholedash.png" alt="PI hole dashboard"></p>
+<p>Some notable features include:<ul>
+<li>Mobile friendly interface</li>
+<li>Password protection</li>
+<li>Detailed graphs and doughnut charts</li>
+<li>Top lists of domains and clients</li>
+<li>A filterable and sortable query log</li>
+<li>Long Term Statistics to view data over user-defined time ranges</li>
+<li>The ability to easily manage and configure Pi-hole features</li>
+<li>... and all the main features of the Command Line Interface!</li>
+</ul></p>
+<h2>Faster-than-light Engine</h2>
+<p>FTLDNS is a lightweight, purpose-built daemon used to provide statistics needed for the Web Interface, and its API can be easily integrated into your own projects. As the name implies, FTLDNS does this all very quickly!</p>
+<p>The API can be accessed via telnet, the Web (admin/api.php) and Command Line (pihole -c -j). You can out find more <a href="https://discourse.pi-hole.net/t/pi-hole-api/1863" target="blank"> details over here</a>.</p>
+</div></div></section></body></html>

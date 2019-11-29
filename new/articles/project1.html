@@ -1,0 +1,58 @@
+<html itemscope="" itemtype="http://schema.org/Article">
+<head><meta charset="utf-8">
+
+<title>Flavius Cristiu (flaX1k)</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="../img/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Oswald" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta property="og:title" itemprop="name" content="Flavius Cristiu (flax1k)">
+<meta property="og:image" itemprop="image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200">
+<meta property="og:description" itemprop="description" content="Developer, Employee, Dreamer. This is where I put the stuff I make.">
+
+</head>
+<body>
+<header class="nav" itemscope="" itemtype="http://schema.org/Person">
+	<div><img src="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" alt="flax1k avatar" itemprop="image"></div>
+	<div>
+		<div class="name">Flavius Cristiu</div>
+		<div class="handle">@flax1k</div>
+	</div>
+	<p>Cyber developer & infiltration hybrid.</p><br />
+	<a href="https://twitter.com/flax1k" class="big icon-twitter" target="_blank"></a>
+	<a href="https://github.com/flax1k" class="big icon-github" target="_blank"></a>
+	<a href="about1.html" class="big icon-mail"></a><br />	
+	<a href="../index.html" class="big material-icons">home</a>
+</header>
+<section>
+<div class='postwrapper'><div class="post"><h1>FLAON - home automation project</h1><br />
+<time>10/11/19</time>
+<p>This is a functional and under continous development project of a smart home system built with Raspberry Pi, Arduino and Android tablets. The whole system runs in my home.</p>
+<p><img src="../img/android_device.png" alt="Android tablet mounted on my wall."></p>
+<p>This is a stand alone project, meaning NO INTERNET CONNECTION is required (like blynk , azure, cayenne, ubidots and other Internet based projects) for the system to run properly. The Internet connection is used for weather status and predictions, but is also used for sending home status to my phone.</p>
+<h2 id="hardware">Hardware</h2>
+<ul>
+   <li>Raspberry Pi 2 Model B - 2pcs</li> 
+   <li>Android tablets - 3pcs - wall mounted in different rooms</li>
+   <li>Wemos ESP8266 - 4pcs</li>
+   <li>DHT22 temperature sensors - 4pcs</li>
+   <li>Alexa Echo - 1pc</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+   <li>flaON software installed on each android device - coded in java for android KitKat</li>
+   <li>central scripts that run on both RPIs - coded in python for communication, calendar, weather prediction and data management for the whole system</li>
+</ul>
+<p>The FLAON system is based on MQTT communication wich has been proved as a more stable, customizable and faster system than TCP client-server/java-python protocol that I used before.</p>
+<h2 id="features">Features</h2>
+<ol>
+<li>This project uses Openhab2 wich allows me to control/see different parameters from remote android app installed on my phone;</li>
+<li>Custom voice notifications uses TTS engine available in English only and notifies me every message/alerts from the system;</li>
+<li>JSON data in MQTT protocol for communications between home devices;
+</ol>
+<p>The android tablets run their own daydream services featuring a few info like date, time, temperature and actual weather condition.</p>
+<p><img src="../img/android_device_stdby.png" alt="Android tablet STANDBY."></p>
+<p><strong>To be continued</strong> as I work more on this project.</p>
+</div></div></section></body></html>
