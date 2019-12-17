@@ -13,13 +13,12 @@ body{
 	font-family:roboto,sans-serif;
 	font-size:18px}
 form{display:inline-block;margin:4px}
-h1{font-weight:400}
+h1{font-weight:400; background-image: -webkit-linear-gradient(90deg, #ff0000, #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+h2{background-image: -webkit-linear-gradient(90deg, #ff0000, #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 a{color:#223292}
 .nav{width:30%;height:100%;position:fixed;top:0;left:0;background:#111;color:#fff;text-align:center;padding-top:100px}
 .nav .topline{text-align:left}
-.nav .name{display:block;font-family:oswald,sans-serif;font-size:40px;text-decoration:none; background-image: -webkit-linear-gradient(92deg, #ff0000, #fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;}
+.nav .name{display:block;color: #fff; font-family:oswald,sans-serif;font-size:40px;text-decoration:none;s}
 .nav a{margin:5px;padding:3px;padding-left:0;text-decoration:none;color:#efefef}
 .nav p a{display:inline-block;margin:0;padding:0}
 .nav a:hover{color: #ff0000; -webkit-text-shadow:0 0 10px #ff0000;-moz-text-shadow:0 0 10px #ff0000;-ms-text-shadow:0 0 10px #ff0000;-o-text-shadow:0 0 10px #ff0000;text-shadow:0 0 10px #ff0000}
