@@ -29,7 +29,10 @@
 <section>
 <div class='postwrapper'><div class="post"><h1>flaON - home automation project</h1><br />
 	<time>31/12/2019</time><p>Last day of the year updates</p>
-	<p>The need of having the most important info about FLAON project on the first screen, made me to change the layout of the android tablets. Also the daydream is changed by providing additional info regarding the main statuses of the system.</p>
+	<p>The need of having the most important info about FLAON project on the first screen, made me to change the layout of the android tablets (see below).</p>
+	<p><img src="../img/lastday20191.png" alt="Last day of 2019 layout android tablet."></p>
+	<p>Also the daydream is changed by providing additional info regarding the main statuses of the system as a notification icons (below is the new event icon example)</p>
+	<p><img src="../img/lastday20192.png" alt="Last day of 2019 daydream layout."></p>	
 	<p>I am considering to change the TTS engine and let the warning and notification system only.</p>
 	<p>The SharedPreferences have been moved to a separate class "Common".</p>
 	<pre><code>package com.android.flax1k.flaon02;
@@ -39,21 +42,17 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 public class Common {
-	private static SharedPreferences prefs;
-	
-	private Common() {}
-	
+	private static SharedPreferences prefs;	
+	private Common() {}	
 	static void init(Activity activity) {
 		init(activity.getApplicationContext());
 	}
 
 	static void init(Context context) {
-		//if (prefs == null) {
-		
+		if (prefs == null) {		
 			prefs = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
-		//}
-	}
-	
+		}
+	}	
 
 	static SharedPreferences getPrefs(Context context) {
 		//if (prefs == null) {
@@ -62,6 +61,7 @@ public class Common {
 		return prefs;
 	}
 }</code></pre>
+	<p>The connectivity was also moved to a BroadcastReceiver programmatically registered.</p>
 <time>24/12/2019</time>
 	<p>Christmas updates for my flaON project</p>
 	<p>In the new section added (System) I intent to display an overview status of the whole smart home system.</p>
