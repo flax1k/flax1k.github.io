@@ -29,14 +29,19 @@
 </header>
 <section>
 <div class='postwrapper'><div class="post"><h1>Export from Huawei Watch GT to GPX file </h1><br />
-<p>The following script will convert any HiTrack file from Huawei watch GT into a STARAVA readable GPX file.</p>
-<p>Before converting, it's necessary to ensure to have all needed packages by running the command: <code>pip3 install -r requirements.txt</code>.</p><br />where the requirements are:
-<pre><code class="lang-java">
+<p>The following script will convert any HiTrack file from Huawei watch GT into a STRAVA readable GPX file.</p>
+<p>Before converting, it's necessary to ensure to have all needed packages by running the command: <code>pip3 install -r requirements.txt</code><br />where the requirements are:
+<code class="lang-java">
 numpy==1.16.3
 pandas==0.24.2
 pkg-resources==0.0.0
 python-dateutil==2.8.0
 pytz==2019.1
-six==1.12.0</code></pre>
-
+six==1.12.0</code></p>
+<p>The tool runs on the command line, without arguments. Every HiTrack files present in the same folder than the scrip will be processed and transformed in a GPX file renamed with this rule: <br />
+<i><b>ddmmyyyy_hhmmss_hhmmss.gpx</b></i>
+<br />
+where the two hours are the start and the end times of exercice.</p>
+<script src="https://gist.github.com/flax1k/78788c1c56a8d2b1324ab7435aa90de1.js"></script>
+<p>Other command line arguments: -d or --debug : for debugging, allows to see more informations during process.</p>
 </div></div></section></body></html>
