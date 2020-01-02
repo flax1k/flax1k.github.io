@@ -1,56 +1,290 @@
-<html itemscope="" itemtype="http://schema.org/Article">
-<head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Developer, dreamer, designer, employee. Just a website of mine. This is where I put the stuff that I make.">
+    <meta name="author" content="flax1k">
+	<meta property="og:site_name" content="Flavius Cristiu |flax1k" /> 
+	<meta property="og:site" content="" />
+	<meta property="og:title" content="Flavius Cristiu | flax1k"/> 
+	<meta property="og:description" content="Developer, dreamer, designer, employee. Just a website of mine. This is where I put the stuff that I make." />
+	<meta property="og:image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200" />
+	<meta property="og:url" content="http://flax1k.github.io" /> 
+	<meta property="og:type" content="article" />
 
-<title>Flavius Cristiu (flaX1k)</title>
+    <!-- Website Title -->
+    <title>Flavius Cristiu (flaX1k)</title>
 
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<link rel="stylesheet" href="img/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Oswald" type="text/css">
-<link rel="shortcut icon" href="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" type="image/x-icon">
-<meta property="og:title" itemprop="name" content="Flavius Cristiu (flax1k)">
-<meta property="og:image" itemprop="image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200">
-<meta property="og:description" itemprop="description" content="Developer, Employee, Dreamer. This is where I put the stuff I make.">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/ban661.jpg">
 </head>
-<body>
-<header class="nav">
-	<div><img src="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" alt="flax1k avatar" itemprop="image"></div>
-	<div>
-		<div class="name">Flavius Cristiu</div>
-		<div class="handle">@flax1k</div>
-	</div>
-	<p>Cyber developer & infiltration hybrid.</p><br />
-	<a href="https://twitter.com/flax1k" class="big icon-twitter" target="_blank"></a>
-	<a href="https://github.com/flax1k" class="big icon-github" target="_blank"></a>
-	<a href="articles/about1.html" class="big icon-mail"></a>	
-</header>
-<section>
-<div class="indexlist">
-<h2 class="animate">Projects & hobbies</h2>
-	<div class="posts-list" id="posts">
-		<ul>
-			<li><a href="articles/project1.html" data-categories="Flaon" data-featured="true">FLAON - Personal home automation project</a></li>
-			<li><a href="articles/project2.html" data-categories="MyStar" data-featured="true">MYSTAR: android launcher for my car's navigation</a></li>
-			<li><a href="articles/cycling.html" data-categories="" data-featured="true">My cycling adventure</a></li>
-		</ul>
-	</div>
-<h2 class="animate">Notes</h2>
-	<div class="posts-list animate" id="posts">
-		<ul>		
-		<li><a href="articles/gttogpx.html" data-categories="" data-featured="true">Export from Huawei Watch GT to GPX file</li>
-		<li><a href="articles/article1.html" data-categories="" data-featured="true">Using U2F 2-factor keys with Node.js</a></li>
-		<li><a href="articles/article2.html" data-categories="" data-featured="false">Pi-hole a black hole for Internet advertisements</a></li>
-		<li><a href="articles/article3.html" data-categories="" data-featured="false">Inefficient Android JSON parser popularized by Stack Overflow</a></li>
-		<li><a href="articles/article4.html" data-categories="Linux" data-featured="true">Linux OS total annihilation</a></li>
-		<li><a href="articles/article5.html" data-categories="python" data-featured="true">Small connection monitor in python</a></li>
-		<li><a href="articles/analiticsapi.html" data-categories="" data-featured="true">Analytics API: Python quickstart for service accounts</a></li>
-		</ul>
-	</div>
-<h2 class="animate">About</h2>
-	<div class="posts-list" id="posts">
-<ul>
-<li><a href="articles/about1.html" data-categories="" data-featured="true">Just a few world about me</a></li>
-</ul>
-	</div>
-</div></section>
-</body></html>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/ban661.jpg" alt="alternative">
+	      <div class="navbar-brand logo-text">Flavius Cristiu</div>
+	      <div class="logo-hashtag">@flaX1k</div></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#hobbies">HOBBIES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link page-scroll" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/face-medium.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>FLAVIUS CRISTIU<br>cyber <span id="js-rotating">developer, designer, dreamer</span></h1>
+                            <p class="p-large">Be welcome to my cyber space!<br />Here you’ll find some stuff about my projects, my hobbies, or different notes about me.<br />It's just a personal web space.</p>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Details 1 -->
+    <div id="hobbies" class="basic-2">
+	<h2>HOBBIES</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/flaon_project.jpg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>flaON project</h3>
+                        <p>This is a functional and under continuous development project of a smart home system built with Raspberry Pi, Arduino controllers and Android tablets. The whole system runs in my home<br />I always loved the ideeas of automation, AI or smart homes and this project is a personal approach of these ideeas. Everything was build and designed by me with a lot of work and passion.</p>
+                        <a class="btn-solid-reg" href="flaon.html">DETAILS about flaON</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>myStar02 project</h3>
+			    			<p>A simple android launcher for my Mercedes Benz car, with a few features and many improvements to made.</p>
+                            <a class="btn-solid-reg  popup-with-move-anim" href="#details-mystar02">DETAILS about myStar02</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-mystar2.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/myisstrava.png" alt="mycycling">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>my Cycling adventure</h3>
+                        <p>In the summer of 2019 I've discovered a new passion of mine: <b>cycling</b>.</p>
+                        <a class="btn-solid-reg  popup-with-move-anim" href="#details-cycling">DETAILS about cycling</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-cycling" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-cycling.png" alt="my cycling adventure">
+			</div>
+			<div class="col-lg-6">
+				<h3>My cycling adventure</h3>
+				<hr>
+                <p>I always had a bike and I rode since I was a kid, but not at this level from the past few months.</p>
+                <p>I learned new things, I was completely sweat, I enjoyed new emotions and challenges, I tested my physical limits, I fell off the bike, I rode in the rain being completely wet, I was burned by the sun, I admired beautiful new places, I went downhill with 80km/h, I was run away by dogs, I caught flies on my face, but all these were done out of passion and everytime when I ride my bike I enjoy every moment.</p><hr>
+		<p>Cycling is a passion, an emotion, a sport and I love cycling.</p>
+		<a class="btn-solid-reg mfp-close as-button" href="#hobbies">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+	<div id="details-mystar02" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-mystar21.png" alt="my cycling adventure">
+			</div>
+			<div class="col-lg-6">
+				<h3>myStar02</h3>
+				<hr />
+                <p>The ideea of changing the boring launcher from my android navigation of my car, made me to develop this personal launcher.</p>
+                <p>It's not a woow launcher, but I like it because of its simplicity, size and because it's perfectly working</p><p>So far it can launch different apps, it has customizable colors, language can be changed and a media player is displayed on the main screen when it's needed.</p><hr />
+		<p>More improvements will be made as I have time and new ideeas. :P</p>
+		<a class="btn-solid-reg mfp-close as-button" href="#hobbies">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- SKILLS -->
+    <div id="skills" class="basic-4">
+	  <h2>MY SOFTWARE SKILLS</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                	<p>I always loved to learn new skills, software included, and coding is one of my hobbies.<br />This is a list with my software knowledge: </p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>- java - main coding language</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>- python - second coding language</td></tr>
+          <tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>- C/C++ - for my arduino related controllers</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>- C# - used when I was a Windows user</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>- jquery - web programming</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>- html - very used and common</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>- mysql - data bases</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>- gimp - image editor</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>- php - old but still used in nowdays</td></tr>
+				</table>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/programming2.jpg" alt="programming">
+                    </div> <!-- end of img-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of download -->
+
+    <!-- Footer -->
+    <div id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media"><i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">Gurahont, jud.Arad, Romania</div>
+                            </li>
+                            <li class="media"><i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="blue" href="mailto:flavius.cristiu@gmail.com">  flavius.cristiu@gmail.com</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Older Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">The <a class="turquoise" href="index_old.html">old</a> version of this website </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="#still-a-dead-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#still-a-dead-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#still-a-dead-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="copyright">
+                    <p class="p-small">Copyright © 2020, flaX1k</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
