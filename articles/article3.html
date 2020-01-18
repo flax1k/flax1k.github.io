@@ -1,0 +1,69 @@
+<html itemscope="" itemtype="http://schema.org/Article">
+<head><meta charset="utf-8">
+
+<title>Flavius Cristiu (flaX1k)</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="../img/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Oswald" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" href="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" type="image/x-icon">
+<meta property="og:title" itemprop="name" content="Flavius Cristiu (flax1k)">
+<meta property="og:image" itemprop="image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200">
+<meta property="og:description" itemprop="description" content="Developer, Employee, Dreamer. This is where I put the stuff I make.">
+
+</head>
+<body>
+<header class="nav" itemscope="" itemtype="http://schema.org/Person">
+	<div><img src="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" alt="flax1k avatar" itemprop="image"></div>
+	<div>
+		<div class="name">Flavius Cristiu</div>
+		<div class="handle">@flax1k</div>
+	</div>
+	<p>Cyber developer & infiltration hybrid.</p><br />
+	<a href="https://twitter.com/flax1k" class="big icon-twitter" target="_blank"></a>
+	<a href="https://github.com/flax1k" class="big icon-github" target="_blank"></a>
+	<a href="about1.html" class="big icon-mail"></a><br />	
+	<a href="../index.html" class="big material-icons">home</a>
+</header>
+<section>
+<div class='postwrapper'><div class="post"><h1>Inefficient Android JSON parser popularized by Stack Overflow</h1><br />
+<p><em>If you&#39;re just interested in what a good way to load JSON would be, <a href="https://github.com/square/okhttp/wiki/Recipes#parse-a-json-response-with-gson">OkHttp + GSON is probably decent</a>.</em></p><br />
+<p>Real quick Java tip, for those of us who have to, or choose to, keep using Java after our time at UCF (thanks Android).</p>
+<p>So first off, think about this example:</p>
+<pre><code class="lang-java">String str = &quot;Hello World&quot;;
+String newString = &quot;&quot;;
+for (int i = 0, int len = str.length(); i &lt; len; i++) {
+    newString += str.charAt(i);
+}</code></pre>
+<p>What&#39;s the runtime? O(n^2), where n = len. Why? Because we&#39;re allocating a new String object for every letter of the input string, and copying the new string letter-by-letter into the new string instance. By the time we reach the end of the string, we have to do another n operations. Ok, so technically we&#39;re not strictly doing n * n operations, but it&#39;s still approximately quadratic when it should be linear.</p>
+<p>Even further, what happens to all those old String instances that we&#39;re no longer using? They get GC&#39;d. And we can end up allocating so many of them throughout that loop that we freeze the main thread to do a GC operation, dropping frames in an Android app. Not great.</p>
+<p>But there&#39;s a ton of sample code out on StackOverflow that I keep finding, and once used, in Android applications, that has <em>horrible</em> performance. It looks something like this:</p>
+<pre><code class="lang-java">HttpResponse response = httpclient.execute(httpget);
+InputStream inputStream = response.getEntity().getContent();
+BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+String line;
+String result = &quot;&quot;;
+while ((line = bufferedReader.readLine()) != null)
+    result += line;
+inputStream.close();
+return new JSONObject(result);</code></pre>
+<p>Not only do we have the same problem as before (but with lines instead of characters), but we&#39;re also generating an entire string from a stream, and <em>then</em> piping that string into a parser to turn it into an object. That&#39;s a waste of CPU since we could just stream the input stream into a JSON parser and have our JSON object built as we&#39;re getting data streamed over the network.</p>
+<p>There&#39;s a slightly improved version of the above example floating around Stackoverflow, too, that uses a StringBuilder instead of a String. A StringBuilder is basically an array-backed data structure that you can pipe characters into and construct into a String once all the characters are added. It&#39;s pretty awesome and is used to solve the problem in the first example. However, it&#39;s worth keeping in mind that the StringBuilder is backed by an array, and the initial size is usually 16. That&#39;s tiny in terms of JSON data. And it seems to grow mostly linearly, too:</p>
+<pre><code>Capacity: 16, Length: 0
+Capacity: 65, Length: 65
+Capacity: 132, Length: 130
+Capacity: 266, Length: 195
+Capacity: 266, Length: 260
+Capacity: 534, Length: 325</code></pre>
+<p>Like an ArrayList, every time the capacity is exhausted, the array needs to be trashed and reallocated with a new length, and with it&#39;s default size and appending long strings, we&#39;re pretty much reallocating the array on every append, as seen above.</p>
+<p>So three things:</p>
+<ol>
+<li>Use a stream, don&#39;t build a String unless you need it (JsonObject from GSON can be constructed with an input stream)</li>
+<li>If you have to use an StringBuilder, set the initial capacity to something you expect your input to be (hint: HTTP response headers should have a &#39;Content-length&#39; field)</li>
+<li>Everywhere in life, think about how an underlying data structure works, whether it&#39;s Python, JavaScript, etc. Here&#39;s a neat table about Python operations and their time complexities: <a href="https://wiki.python.org/moin/TimeComplexity">https://wiki.python.org/moin/TimeComplexity</a></li>
+</ol>
+<p>Ok, got through all that.</p>
+<p>Also, I genuinely mean for this post to be helpful, not a show-off or a rant. If I&#39;m totally wrong about something, please let me know. Trying to get much better at Java and this ended up being one of the major bottlenecks in several Android apps I&#39;ve worked on.</p>
+</div></div></section></body></html>

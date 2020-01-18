@@ -1,0 +1,48 @@
+<html itemscope="" itemtype="http://schema.org/Article">
+<head><meta charset="utf-8">
+
+<title>Flavius Cristiu (flaX1k)</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="../img/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Oswald" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" href="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" type="image/x-icon">
+<meta property="og:title" itemprop="name" content="Flavius Cristiu (flax1k)">
+<meta property="og:image" itemprop="image" content="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=200">
+<meta property="og:description" itemprop="description" content="Developer, Employee, Dreamer. This is where I put the stuff I make.">
+
+</head>
+<body>
+<header class="nav" itemscope="" itemtype="http://schema.org/Person">
+	<div><img src="https://s.gravatar.com/avatar/9a697ca664fac8eec2e36b0bd7fa583a?s=150" alt="flax1k avatar" itemprop="image"></div>
+	<div>
+		<div class="name">Flavius Cristiu</div>
+		<div class="handle">@flax1k</div>
+	</div>
+	<p>Cyber developer & infiltration hybrid.</p><br />
+	<a href="https://twitter.com/flax1k" class="big icon-twitter" target="_blank"></a>
+	<a href="https://github.com/flax1k" class="big icon-github" target="_blank"></a>
+	<a href="about1.html" class="big icon-mail"></a><br />	
+	<a href="../index.html" class="big material-icons">home</a>
+</header>
+<section>
+<div class='postwrapper'><div class="post"><h1>Using U2F 2-factor keys with Node.js</h1><br />
+<p>I recently took advantage of <a href="https://www.yubico.com/why-yubico/for-individuals/github/">Yubico and GitHub&#39;s hard to pass up $5 key deal</a> and my shipment finally arrived. The implementation is pretty different from the keyboard-emulating OTP or TOTP keys, so I figured I&#39;d dive in and learn what it takes to implement this in a web app. As intended by Yubico and GitHub, implementing this in your own application is super simple. In this case, I&#39;ll be using Node.js, but they have <a href="https://developers.yubico.com/U2F/Libraries/Using_a_library.html">examples for other languages</a>.</p>
+<p>On the backend, I went with the <a href="https://github.com/ashtuchkin/u2f">u2f node package</a>. For the frontend, the recommended route is the <a href="https://demo.yubico.com/js/u2f-api.js">U2F JavaScript API</a>.</p>
+<p>I built the following basic example based on the instructions on the <code>u2f</code> package README.</p>
+<script src="https://gist.github.com/flax1k/2c4e8e137cdd5eb01f72248704e62f59.js"></script>
+<script src="https://gist.github.com/flax1k/5dab049b540cca284b625c7b1fcfa968.js"></script>
+<p>It more or less worked out of the box. A few important notes:</p>
+<ul>
+<li>APPID is your application&#39;s top level URL, though there are <a href="https://developers.yubico.com/U2F/App_ID.html">other options for this</a></li>
+<li>The web page <em>must</em> be served over HTTPS</li>
+<li>Currently only Chrome supports U2F out of the box. Other browsers need extensions at this time, but both Mozilla and Microsoft are working on mainlining this</li>
+<li>Familarize yourself with the <a href="https://developers.yubico.com/U2F/Libraries/Client_error_codes.html">client error codes</a></li>
+<li>There is obviously no real user system in this example, but it&#39;s hopefully clear enough on how this would be implemented in a full app</li>
+<li>As usual, consult with a security researcher to verify your implementation is working as intended</li>
+</ul>
+<p>The repository for this example is <a href="https://github.com/flax1k/u2f-node-example" target="blank">here</a>.</p>
+<p>Happy Hacking!</p>
+</div></div></section></body></html>

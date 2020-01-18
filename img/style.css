@@ -1,0 +1,127 @@
+@font-face{font-family:icomoon;
+	src:url(icomoon.eot?ml0epj);
+	src:url(icomoon.eot?#iefixml0epj) format('embedded-opentype'),url(icomoon.woff?ml0epj) format('woff'),url(icomoon.ttf?ml0epj) format('truetype'),url(icomoon.svg?ml0epj#icomoon) format('svg');font-weight:400;font-style:normal}[class^=icon-],[class*=" icon-"]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-mail:before{content:"\e600"}
+.icon-twitter:before{content:"\e602"}
+.icon-github:before{content:"\e603"}
+body{
+	margin:0;
+	padding:0;
+	color:#333;
+	background: url('background.png') fixed;
+        background-size: cover;
+	font-family:roboto,sans-serif;
+	font-size:18px}
+form{display:inline-block;margin:4px}
+h1{font-weight:400; background-image: -webkit-linear-gradient(90deg, #ff0000, #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+h2{background-image: -webkit-linear-gradient(90deg, #ff0000, #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+a{color:#223292}
+.nav{width:30%;height:100%;position:fixed;top:0;left:0;background: linear-gradient(to right, #000000, #262431);color:#fff;text-align:center;padding-top:100px}
+.nav .topline{text-align:left}
+.nav .name{display:block;color: #fff; font-family:oswald,sans-serif;font-size:40px;text-decoration:none;s}
+.nav a{margin:5px;padding:3px;padding-left:0;text-decoration:none;color:#efefef}
+.nav p a{display:inline-block;margin:0;padding:0}
+.nav a:hover{color: #ff0000; -webkit-text-shadow:0 0 10px #ff0000;-moz-text-shadow:0 0 10px #ff0000;-ms-text-shadow:0 0 10px #ff0000;-o-text-shadow:0 0 10px #ff0000;text-shadow:0 0 10px #ff0000}
+.nav a.big{font-size:40px}
+.nav .footer{position:absolute;bottom:10px;text-align:center;color:#fff;width:300px}
+.nav img{border-radius:20%}
+.nav .handle{margin-bottom:15px;font-family:oswald,sans-serif}
+
+
+.posts{display:block;overflow:hidden;height:100%;margin-left:60px;padding:10px}
+.posts .post{cursor:pointer}
+.posts .post img{max-width:380px;margin:5px}
+.post{position:relative;display:inline-block;width:390px;margin-right:30px;margin-bottom:30px;padding:5px;vertical-align:top;text-decoration:inherit;color:inherit;border:solid 1px #d5d5d5;border-radius:5px}
+.post h1{margin:-2px;font-size:35px}
+.posts .post h1{margin:5px}
+.post img{text-align:center}
+.postwrapper{width:100%;}
+.postwrapper .post{display:block;width:650px;padding:15px;border:none;position:relative;margin-left:35%;line-height:30px}
+.postwrapper .post h1{font-size:40px;margin-top:50px;line-height:40px}
+
+
+.log{margin-left:250px}
+time{color:#777;font-size:14px}
+img{max-width:650px}
+code{background:#fff}
+pre code{display:block;max-width:93%;position:relative;padding:5px;color:#333;font-size:12px;overflow:auto;vertical-align:middle;word-wrap:break-word;word-break:break-word}#disqus_thread{margin-top:20px}
+.postfooter{text-align:center;font-size:10px}
+.gist{font-size:11px;line-height:16px}
+.sidebuttons{position:fixed;top:10px;right:20px;text-align:right;z-index:5}
+table.github-repos{width:650px;margin-left:10px}
+table.github-repos thead{font-weight:700}
+table.github-repos td{padding:10px}
+.filter{display:block;position:relative;height:50px;background:#fff;padding-left:5px;z-index:10;text-align:center}.filter a{display:inline-block;padding:14px;margin:0;margin-left:-14px;margin-right:14px;text-decoration:none;color:#333}.filter a.active{background:#363f4b;color:#fff}#filter_select{display:none}iframe.video{width:650px;height:360px}
+
+.clearfix:before,
+.clearfix:after,
+
+.row { margin-bottom: 20px; box-sizing: border-box;}
+.row img { max-width: 246px; height: auto; }
+.col-md-1 { width: 47%;  position: relative; min-height:1px; float: left; padding-left: 0rem}
+.col-md-2 { width: 47%;  position: relative; min-height:1px; float: left; }
+.col-md-3 { width: 246px; position: relative; min-height:1px; float: left}
+.col-md-4 { width: 40%; position: relative; min-height:1px; padding-right:15px; padding-left: 15px; float: left}
+.col-down {position: relative; float:left; top:20px; margin-bottom: 20px; box-sizing: border-box;}
+.col-down a{color:#333;text-decoration:none}
+.col-down a:hover{font-weight:bold; color:#000; -webkit-text-shadow:0 0 10px #ff0000;-moz-text-shadow:0 0 10px #ff0000;-ms-text-shadow:0 0 10px #ff0000;-o-text-shadow:0 0 10px #ff0000;text-shadow:0 0 10px #ff0000}
+
+.indexlist{
+	background: url('background.png') fixed;
+        background-size: cover;
+	margin-top:100px;
+	margin-left:35%
+	}
+.indexlist a{color:#333;text-decoration:none}
+.indexlist a:hover{font-weight:bold; color:#000; -webkit-text-shadow:0 0 10px #ff0000;-moz-text-shadow:0 0 10px #ff0000;-ms-text-shadow:0 0 10px #ff0000;-o-text-shadow:0 0 10px #ff0000;text-shadow:0 0 10px #ff0000}
+.indexlist ul{line-height:1.8em}
+
+@media(max-width:1024px) {
+ .postwrapper .post h1{font-size:30px;margin-top:30px;line-height:30px}
+ .postwrapper .post h2{font-size:20px;line-height:20px}
+ .nav {
+	width:100%;
+	height:auto;
+    	position:relative;
+    	display:block;
+    	padding-top:20px;
+    	padding-bottom:20px
+	}
+	.nav img{width:100px;height:100px}
+	.nav a.big{font-size:30px}
+	.indexlist {
+		margin-left:30px;
+		margin-top:20px
+	}
+	 .postwrapper {
+	  width:inherit;
+	  padding:0
+	 }
+	 .postwrapper .post,
+	 .posts .post {
+	  border-radius:0;
+	  width:inherit;
+	  margin:auto
+	 }
+	 .posts .post {
+	  margin:8px
+	 }
+	 img {
+	  max-width:80%
+	 }
+	 .posts .post img,
+	 .postwrapper .post img {
+	  max-width:95%;
+	  margin-left:8px
+	 }
+	 .posts {
+	  margin:0;
+	  margin-bottom:15px
+	 }
+	 .post {
+	  display:block;
+	  overflow:hidden;
+	  border:none;
+	  padding:4px
+	 }
+}
