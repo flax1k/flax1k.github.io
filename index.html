@@ -59,6 +59,45 @@
 
 </header>	
 	<div id="content" class="inner">
+<article class="post">
+	<h2 class="title">
+		<a href="">Python connection monitor</a>
+	</h2>
+	<div class="entry-content">
+		<p>Small python program for logging internet connection.</p>
+		<p>My flaON system is monitoring the internet connection using this kind of script: </p>
+		<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import urllib2, time, socket</span>
+<span class='line'>from datetime import datetime</span>
+<span class='line'></span>
+<span class='line'>previous_state = 'Monitoring started</span>
+<span class='line'>current_state = 'Monitoring started'</span>
+<span class='line'>readable_time = None</span>
+<span class='line'>time_now = None</span>
+<span class='line'>disconnected_time = None</span>
+<span class='line'></span>
+<span class='line'>def start_monitoring():</span>
+</code></pre></td></tr></table></div></figure>
+	<p>So far, this little script proved to be fast and reliable.</p>
+	<a href="articles/connection-monitor.html" class="more-link">Read on &rarr;</a>
+	</div>
+<div class="meta">
+	<div class="date">
+		<time datetime="2020-01-26T18:33:00-07:00" pubdate data-updated="true">Jan 26<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>, <a class='category' href=''>smart home</a>
+	</div>	
+</div>
+</article>
     <article class="post">
 	<h2 class="title">		
 		<a href="">Handling RealmMigrationNeededException on a fresh installation on Android</a>
