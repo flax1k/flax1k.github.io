@@ -61,7 +61,7 @@
 	<div id="content" class="inner">
 <article class="post">
 	<h2 class="title">
-		<a href="">Python connection monitor</a>
+		<a href="articles/connection-monitor.html">Python connection monitor</a>
 	</h2>
 	<div class="entry-content">
 		<p>Small python program for logging internet connection.</p>
@@ -100,7 +100,7 @@
 </article>
     <article class="post">
 	<h2 class="title">		
-		<a href="">Handling RealmMigrationNeededException on a fresh installation on Android</a>
+		<a href="articles/handling-realmmigrationneededexception-on-a-fresh-installation-on-android.html">Handling RealmMigrationNeededException on a fresh installation on Android</a>
 	</h2>
 	<div class="entry-content">
 		<p>A few days ego, I had just started using <a href="https://realm.io/">Realm</a> on Android and was having some troubles. I&#8217;d occasionally need to make a model change, and being early on in development I was happy to just delete the Realm and start again - in production you&#8217;d want to perform a migration so you don&#8217;t lose any user data.</p>
@@ -110,7 +110,7 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>io.realm.exceptions.RealmMigrationNeededException: RealmMigration must be provided</span></code></pre></td></tr></table></div></figure>
 <p>This doesn&#8217;t make sense! I should be able to uninstall an app and upon reinstalling it I should have a fresh slate to work with. As it turns out, not quite. I couldn&#8217;t figure out why at the time, but <a href="https://github.com/realm/realm-java/issues/1856">the workaround</a> was to simply add a <code>deleteRealmMigrationIfNeeded()</code> call to my Realm configuration when building it. I made a note to deal with this before release, and carried on my way.</p>
-		<a href="" class="more-link">Read on &rarr;</a>
+		<a href="articles/handling-realmmigrationneededexception-on-a-fresh-installation-on-android.html" class="more-link">Read on &rarr;</a>
 	</div>
 	<div class="meta">
 		<div class="date">
@@ -122,14 +122,14 @@
 </article>
 <article class="post">
 	<h2 class="title">
-		<a href="">Handling OutOfMemoryError with large bitmaps on older Android devices</a>
+		<a href="articles/handling-outofmemoryerror-with-large-bitmaps-on-older-android-devices.html">Handling OutOfMemoryError with large bitmaps on older Android devices</a>
 	</h2>
 	<div class="entry-content">
 		<p>If you&#8217;ve ever worked with bitmaps on an Android device before, you&#8217;ve <a href="http://stackoverflow.com/questions/477572/strange-out-of-memory-issue-while-loading-an-image-to-a-bitmap-object">likely</a> <a href="http://stackoverflow.com/questions/14235287/suggestions-to-avoid-bitmap-out-of-memory-error?lq=1">encountered</a> the <a href="https://code.google.com/p/android/issues/detail?id=8488">dreaded</a> <code>OutOfMemoryError</code> &#8216;bitmap size exceeds VM budget&#8217;. This issue can present itself immediately when testing, however on older devices it may not manifest except in certain cases. The reason for this is as follows:</p>
 
 <blockquote><p>In addition, prior to Android 3.0 (API Level 11), the backing data of a bitmap was stored in native memory which is not released in a predictable manner, potentially causing an application to briefly exceed its memory limits and crash.</p><footer><strong>Android Developer Documentation</strong> <cite><a href='http://developer.android.com/training/displaying-bitmaps/cache-bitmap.html'>developer.android.com/training/&hellip;</a></cite></footer></blockquote>
 <p>Depending on what you&#8217;re doing, there is a way to get around this.</p>
-		<a href="" class="more-link">Read on &rarr;</a>
+		<a href="articles/handling-outofmemoryerror-with-large-bitmaps-on-older-android-devices.html" class="more-link">Read on &rarr;</a>
 	</div>
 <div class="meta">
 	<div class="date">
@@ -156,11 +156,11 @@
 	</div>
 </article>
 <article class="post">
-	<h2 class="title"><a href="">Adding Google Play Services to an Android Studio project</a>
+	<h2 class="title"><a href="articles/adding-google-play-services-to-an-android-studio-project.html">Adding Google Play Services to an Android Studio project</a>
 	</h2>
 	<div class="entry-content">
 		<p>Adding a support library to Android Studio is a bit different to how it&#8217;s done in Eclipse. Where you&#8217;d add a &#8216;project&#8217; in Eclipse, in Studio you add a &#8216;Module&#8217; (which is a sub-project of your overall application - similar to Projects in a Solution, if you&#8217;ve done any .NET development). In this post I detail how to add the Google Play Services project, but you should be able to follow the instructions to add any support library.</p>
-		<a href="/blog/2013/06/23/adding-google-play-services-to-an-android-studio-project/" class="more-link">Read on &rarr;</a>
+		<a href="articles/adding-google-play-services-to-an-android-studio-project.html" class="more-link">Read on &rarr;</a>
 	</div>
 	<div class="meta">
 		<div class="date">
@@ -172,7 +172,7 @@
 </article>
 <article class="post">
 	<h2 class="title">		
-		<a href="/blog/2013/12/17/broken-jsonobject-creation-from-a-utf-8-input-string/">Broken JSONObject creation from a UTF-8 input String</a>
+		<a href="articles/broken-jsonobject-creation-from-a-utf-8-input-string.html">Broken JSONObject creation from a UTF-8 input String</a>
 	</h2>
 	<div class="entry-content">
 		<blockquote><p>W/System.err(3873): org.json.JSONException: Value ﻿  of type java.lang.String cannot be converted to JSONObject</p></blockquote>
@@ -184,7 +184,7 @@
 </span><span class='line'>String json = IOUtils.toString(inStream);
 </span><span class='line'>JSONObject jsonObject = new JSONObject(json);</span></code></pre></td></tr></table></div></figure>
 		<p>Sometimes, I have to save non-ASCII characters. In this case, the file gets saved as UTF-8. Testing this isn&#8217;t a problem on my android devices - but my tester has twice come back to me now and said that it doesn&#8217;t work on our 2.3 device.</p>
-		<a href="" class="more-link">Read on &rarr;</a>
+		<a href="articles/broken-jsonobject-creation-from-a-utf-8-input-string.html" class="more-link">Read on &rarr;</a>
 	</div>
 	<div class="meta">
 		<div class="date">
