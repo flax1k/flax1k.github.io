@@ -71,7 +71,10 @@ h3{font-size:1.3em}a{text-decoration:none;outline-width:0;color:#258fb8}
 #sub-nav .social a.rss{background:url('../images/social/rss.png?1421765695') center no-repeat #ef7522;border:1px solid #ef7522}
 #sub-nav .social a.rss:hover{border:1px solid #cf5d0f}
 #sub-nav .social a.instagram{background:url('../images/social/instagram.png?1421765695') center no-repeat #406e95;border:1px solid #406e95}
-#sub-nav .social a.instagram:hover{border:1px solid #315471}#pagenavi{padding:20px 0;height:20px;line-height:20px;position:relative;border-top:1px solid #fff;border-bottom:1px solid #ddd}#pagenavi a:hover{text-decoration:underline}#pagenavi .prev,#pagenavi .next{position:absolute}#pagenavi .prev{padding-left:30px;left:0}#pagenavi .prev:before{content:"\f060";font:1.3em FontAwesome;position:absolute;left:0}#pagenavi .next{padding-right:30px;right:0}#pagenavi .next:before{content:"\f061";font:1.3em FontAwesome;position:absolute;right:0}#pagenavi .center{text-align:center;width:100%;display:block}@media screen and (max-width: 400px){#pagenavi .center{display:none}}
+#sub-nav .social a.instagram:hover{border:1px solid #315471}
+#sub-nav .social a.strava{background:url('../images/social/strava.png?1421765695') center no-repeat #ed4700; border:1px solid }
+#sub-nav .social a.strava:hover{border:1px solid #cf5d0f}
+#pagenavi{padding:20px 0;height:20px;line-height:20px;position:relative;border-top:1px solid #fff;border-bottom:1px solid #ddd}#pagenavi a:hover{text-decoration:underline}#pagenavi .prev,#pagenavi .next{position:absolute}#pagenavi .prev{padding-left:30px;left:0}#pagenavi .prev:before{content:"\f060";font:1.3em FontAwesome;position:absolute;left:0}#pagenavi .next{padding-right:30px;right:0}#pagenavi .next:before{content:"\f061";font:1.3em FontAwesome;position:absolute;right:0}#pagenavi .center{text-align:center;width:100%;display:block}@media screen and (max-width: 400px){#pagenavi .center{display:none}}
 article{border-bottom:1px solid #ddd;border-top:1px solid #fff;padding:30px 0;position:relative}
 @media screen and (max-width: 800px){article{padding-bottom:15px}}
 @media screen and (max-width: 600px){article{padding:15px 0}}
