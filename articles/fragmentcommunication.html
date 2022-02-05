@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flavius Cristiu @flaX1k</title>
+	<meta name="author" content="flax1k">
+	<meta name="description" content="Ever wonder why Mockito will occasionally give you an UnfinishedStubbingException even though you clearly finished the stubbing? For example, the &hellip;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="/atom.xml" rel="alternate" title="flax1k" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="../images/ban661.jpg" rel="shortcut icon">
+	<link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+	<header id="header" class="inner"><img src="../images/icon-small.png" width="30px" height="30px" alt="flax1k avatar" itemprop="image"><h1><a href="../index.html">Flavius Cristiu</a></h1>
+	<nav id="main-nav"><ul class="main">
+		<li><a href="../hobbies.html">Hobbies</a></li>
+		<li><a href="../articles.html">Articles</a></li>
+		<li><a href="../about.html">About</a></li>
+	</ul>
+	</nav>
+	<nav id="mobile-nav">
+		<div class="alignleft menu">
+			<a class="button">Menu</a>
+			<div class="container" style="display: none; width: 250px;"><ul class="main">
+		<li><a href="../hobbies.html">Hobbies</a></li>
+		<li><a href="../articles.html">Articles</a></li>
+		<li><a href="../about.html">About</a></li>
+	</ul>
+			</div>
+		</div>
+		<div class="alignright search">
+			<a class="button"></a>
+			<div class="container">
+				<form action="http://google.com/search" method="get">
+					<input type="text" name="q" results="0">
+					<input type="hidden" name="q" value="">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<nav id="sub-nav" class="alignright">
+	<div class="social">		
+		<a class="instagram" href="http://instagram.com/flax1000" title="Instagram">Instagram</a> 
+		<a class="twitter" href="http://twitter.com/flax1k" title="Twitter">Twitter</a>		
+		<a class="github" href="https://github.com/flax1k" title="GitHub">GitHub</a>		
+		<a class="strava" href="https://www.strava.com/athletes/42797786" title="Strava">Strava</a>    
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:adamsp.github.com/speakman-website">
+	</form>
+	</nav>
+
+	</header>	
+<div id="content" class="inner">
+	<article class="post">
+		<h2 class="title">Fragment communication in android application</h2>
+		<div class="entry-content">
+			<p>In the last couple of days I've changed the communication model between the fragments and the main activity, so I decided to write a short article about this, using plain simpe Java, not Kotlin.</p>
+			<p>First, some dependencies in the gradle:</p>
+<pre><code>dependencies {
+implementation 'androidx.appcompat:appcompat:1.0.2'
+implementation 'com.google.android.material:material:1.0.0'
+implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
+</code></pre>
+<p>In the XML layout of the Fragment, a View to be modified according with an activity's variable (in this case a TextView):</p>
+<pre><code> ..
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:minHeight="?actionBarSize"
+android:padding="@dimen/appbar_padding"
+android:text="@string/app_name"
+android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+ ..
+</code></pre>
+<p>In main package a subclass of ViewModel named ValuesViewModel is created. In this class, a MutableLiveData<String> instance is used and collects the input from a fragment or activity and shows the data to other fragments. Final code looks like below for one variable "mName" to be monitorized:</p>
+<pre><code>
+package com.fragmentcommunicationexample.ui.main;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+public class ValuesViewModel extends ViewModel {
+  /**
+   * Live Data Instance
+   */
+  private MutableLiveData<String> mName = new MutableLiveData<>();
+  public void setName(String name) {
+    mName.setValue(name);
+  }
+  public LiveData<String> getName() {
+    return mName;
+  }
+}
+</code></pre>
+<p>Next, in the main activity onCreate() method the ViewModel is initialized: </p>
+<pre><code>
+..
+ValuesViewModel mViewModel;
+..
+// init ViewModel
+mViewModel = ViewModelProviders.of(this).get(ValuesViewModel.class);
+</code></pre>
+<p>After initializing ViewModel we’ll set the data like this</p>
+<pre><code>
+mViewModel.setName(value.to.be.set.toString());
+</code></pre>
+<p>Now, whenever the value of mName is changed from the main activity, the ViewModel holds it's value.</p>
+<p>To use or display this value stored in the ViewModel into a fragment, we need to initialize the variable in the onCreate method of the fragment and its owner:</p>
+<pre><code>def send_message(pipe, pid, counter):
+..
+pageViewModel = ViewModelProviders.of(requireActivity()).get(ValuesViewModel.class);
+..
+</code></pre>
+<p>And to display the new value acquired, we need to use the get method in the onViewCreated of the fragment: </p>
+<pre><code>
+pageViewModel.getName().observe(requireActivity(), new Observer<String>() {
+@Override
+        public void onChanged(@Nullable String s) {
+        	title.setText(s + "º");
+        }
+});
+</code></pre>
+<p>That's all. </p>	
+<p>In this article, the communication between Fragments & Activity was shown, using the shared ViewModel.</p>	
+		</div>
+		<div class="meta">
+				<div class="date">
+					<time datetime="2020-07-03T20:51:00-08:00" pubdate data-updated="true">Apr 04<span>th</span>, 2021</time>
+				</div>
+				<div class="tags">
+					<a class='category' href=''>android</a>
+				</div>
+			</div>
+	</article>
+</div>
+<footer id="footer" class="inner">Copyright &copy; 2021 flax1k</footer>
+<script src="../javascripts/slash.js"></script>
+<script src="../javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+</body>
+</html>

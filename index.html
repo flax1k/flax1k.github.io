@@ -1,191 +1,417 @@
-<!DOCTYPE html>
-<html class="js " lang="en-US"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
 	<title>Flavius Cristiu @flaX1k</title>
-	
-	<!-- Seo Tags -->
-	<meta name="description" content="Your page description here">
-	<meta name="keywords" content="Your meta keywords, here">
-	<meta name="robots" content="index, follow"> 
+	<meta name="author" content="flax1k">
+	<meta name="description" content="Ever wonder why Mockito will occasionally give you an UnfinishedStubbingException even though you clearly finished the stubbing? For example, the &hellip;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="/atom.xml" rel="alternate" title="flax1k" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="images/ban661.jpg" rel="shortcut icon">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="files/favicon.jpg" type="image/x-icon">
-	<link rel="icon" href="files/favicon.jpg" type="image/x-icon">
-
-	<!-- Included CSS Files -->
-	<link href="https://fonts.googleapis.com/css?family=Sansita:400,400i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="all" href="files/style.css">
-	<script type="text/javascript" src="files/modernizr.js"></script>
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" media="all" href="css/ie.css" />
-	<![endif]-->
 </head>
 
-<body data-new-gr-c-s-check-loaded="8.894.0" data-gr-ext-installed="">
-	
-	<!-- Loading -->
-	<div id="preload" style="display: none;">
-		<div id="preload-content" style="display: none;">
-			<div class="preload-spinner">
-			<div class="loading-logo-wraper">
-  		<img src="files/logo2.png" alt="">
-			</div>
-				<div class="tp-loader spinner"></div>
-			</div>
+
+<body>
+	<header id="header" class="inner"><img src="images/icon-small.png" width="30px" height="30px" alt="flax1k avatar" itemprop="image"><h1><a href="index.html">Flavius Cristiu</a></h1>
+	<nav id="main-nav"><ul class="main">
+		<li><a href="hobbies.html">Hobbies</a></li>
+		<li><a href="articles.html">Articles</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+	</nav>
+	<nav id="mobile-nav">
+		<div class="alignleft menu">
+			<a class="button">Menu</a>
+			<div class="container" style="display: none; width: 250px;"><ul class="main">
+		<li><a href="hobbies.html">Hobbies</a></li>
+		<li><a href="articles.html">Articles</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
 		</div>
 	</div>
-	
-	<!-- Slideshow Ken Burns -->
-	<div class="slideshow">
-		<div class="slideshow-image" style="background-image: url('files/bg-1.jpg')"></div>
-		<div class="slideshow-image" style="background-image: url('files/bg-2.jpg')"></div>
-		<div class="slideshow-image" style="background-image: url('files/bg-3.jpg')"></div>
-		<div class="slideshow-image" style="background-image: url('files/bg-4.jpg')"></div>		
-	</div>
-
-	<div class="wrap flex">
-
-		<!-- Main -->
-		<div id="main">
-			<div class="inner fade-in" style="position: relative; opacity: 1; top: 0px;">
-
-				<!-- Header -->
-				<header class="site-header">
-					<h1 class="site-title"><img src="files/logo2.png" alt="InTime" width="200" height="160"></h1>
-				</header>
-
-				<!-- Content -->
-				<section class="content">
-
-					<h1 class="section-title">Flavius  Cristiu</h1>
-					<h2 class="subtitle"><i>"Life begins at the end of your comfort zone"</i></h2>
-					<p class="subtitle">Dreamer - Coder - Cyclist</p>
-					
-					<!-- Modal page toggle -->
-					<div class="modal-toggle">
-					<a href="#" id="modal-open" class="button-about">Despre</a>
-					<a href="#" id="modal2-open" class="button-about">Proiecte</a>
-					<a href="#" id="modal3-open" class="button-about">Hobby</a>
-					</div>
-
-					<!-- Social links -->
-					<div class="social">
-						<a href="#"><span class="fa fa-envelope" title="Email"></span></a>
-						<a href="#"><span class="fa fa-facebook" title="Strava"></span></a>
-                            			<a href="#"><span class="fa fa-twitter" title="Twitter"></span></a>
-                            			<a href="#"><span class="fa fa-instagram" title="Instagram"></span></a>
-                            			<a href="#"><span class="fa fa-google-plus" title="Google Plus"></span></a>
-					</div>
-					
-				</section>
-			</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="">
+			</form>
 		</div>
-<!-- Modal page: About Us -->
-		<div id="modal" class="" style="display: none;">
-			<div class="inner">
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">		
+		<a class="instagram" href="http://instagram.com/flax1000" title="Instagram">Instagram</a> 
+		<a class="twitter" href="http://twitter.com/flax1k" title="Twitter">Twitter</a>		
+		<a class="github" href="https://github.com/flax1k" title="GitHub">GitHub</a>		
+		<a class="strava" href="https://www.strava.com/athletes/42797786" title="Strava">Strava</a>    
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="">
+	</form>
+</nav>
 
-				<!-- Modal toggle -->
-				<div class="social">
-					<a href="#" id="modal-close"><span class="fa fa-times" title="Close"></span></a>
-				</div>
+</header>	
+<div id="content" class="inner">
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/flaon15.html">flaON15 - the autumn 2021 version</a>
+	</h2>
+	<div class="entry-content">
+		<p>Some new updates for the flaON15, the system core and the app included, are up & running. The latest updates combine the separated MQTT service, with Node Red and Webthing gateway.</p>
+		<a href="flaon/flaon15.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2021-10-14T21:34:40-08:00" pubdate data-updated="true">Sept 24, 2021</time></div>
+	<div class="tags">
+		<a class='category' href=''>smart home</a>, <a class='category' href=''>android</a>, <a class='category' href=''>hobbies</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="cycling/brm200.html">BRM 200 by RandoROM Arad</a>
+	</h2>
+	<div class="entry-content">
+		<p>In 11th Sep 2021 I took part to my first organized cycling event, a great and unique experience.</p>
+		<a href="cycling/brm200.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2021-05-14T21:34:40-08:00" pubdate data-updated="true">Sept 12, 2021</time></div>
+	<div class="tags">
+		<a class='category' href=''>cycling</a>, <a class='category' href=''>hobbies</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="cycling/passiongoeson.html">And the passion goes on...</a>
+	</h2>
+	<div class="entry-content">
+		<p>The 10th of May 2021 was my last ride with TRIBAN RC120. It was my nameless bike, just a manufacturer code, but it was a bike that has its style, its story that carry on.</p>
+		<a href="cycling/passiongoeson.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2021-05-14T21:34:40-08:00" pubdate data-updated="true">May 14, 2021</time></div>
+	<div class="tags">
+		<a class='category' href=''>cycling</a>, <a class='category' href=''>hobbies</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/fragmentcommunication.html">Fragment communication in android application</a>
+	</h2>
+	<div class="entry-content">
+		<p>In the last couple of days I've changed the communication model between the fragments and the main activity, so I decided to write a short article about this.</p>
+		<a href="articles/fragmentcommunication.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2021-04-04T16:52:40-08:00" pubdate data-updated="true">Apr 04, 2021</time></div>
+	<div class="tags">
+		<a class='category' href=''>android</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/spring2021updates.html">flaON12 - the spring 2021 version</a>
+	</h2>
+	<div class="entry-content">
+		<p>These are the Spring 2021's updates for my flaON project.</p>
+		<a href="flaon/spring2021updates.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2021-03-21T16:52:40-08:00" pubdate data-updated="true">Mar 21, 2021</time></div>
+	<div class="tags">
+		<a class='category' href=''>hobbies</a>, <a class='category' href=''>smart home</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="cycling/2020.html">2020 in cycling</a>
+	</h2>
+	<div class="entry-content">
+		<p>Follow the link to find info about my 2020 in cycling.</p>
+		<a href="cycling/2020.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-12-30T18:32:40-08:00" pubdate data-updated="true">Dec 30, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>hobbies</a>, <a class='category' href=''>cycling</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/updates-dec-20.html">New updates for flaON project</a>
+	</h2>
+	<div class="entry-content">
+		<p>My flaON project has received a few new important updates which makes it more stable, faster, and stable.</p>
+		<a href="flaon/updates-dec-20.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-12-13T12:58:40-08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>gateway</a>, <a class='category' href=''>smart home</a>, <a class='category' href=''>android</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/avalon10-nymea.html">Mozilla gateway changed with nymea</a>
+	</h2>
+	<div class="entry-content">
+		<p>A few days ago I decided to drop the Mozilla Gateway and change my smarthome brain. I don't remember how I found the nymea:core on the Internet, but so far it looks amazing.</p>
+		<a href="flaon/avalon10-nymea.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-09-5T18:32:40-08:00" pubdate data-updated="true">Sept 5<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>gateway</a>, <a class='category' href=''>smart home</a>
+	</div>
+	</div>
+</article>	
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/Timestamps-with-Python-multiprocessing-library.html">Timestamps with Python’s multiprocessing library</a>
+	</h2>
+	<div class="entry-content">
+		<p>Small implementation of running three separate processes that can communicate with each other through messages. Each process has its own internal counter that will be updated with each event.</p>
+		<a href="articles/Timestamps-with-Python-multiprocessing-library.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-07-3T20:18:00-08:00" pubdate data-updated="true">July 3<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>, <a class='category' href=''>smart home</a>
+	</div>
+	</div>
+</article>	
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/flaon401.html">New updates for flaON (version 4.01)</a>
+	</h2>
+	<div class="entry-content">
+		<p>New updates and improvements for my flaON project. <br />These are the bigest changes made to the core of the flaON system, changes that affect the python scripts and changes to the android terminals.</p>
+		<a href="flaon/flaon401.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-04-22T19:45:00-08:00" pubdate data-updated="true">May 31<span>st</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>, <a class='category' href=''>android</a>, <a class='category' href=''>smart home</a>
+	</div>
+	</div>
+</article>			
+<article class="post">
+	<h2 class="title">		
+		<a href="flaon/flaon4-mozilla-gateway.html">flaON - migration to Mozilla Gateway</a>
+	</h2>
+	<div class="entry-content">
+		<p>These days I am doing a few changes to my flaON project and I'm talking about moving from openhab2 to Mozilla Gateway (referenced bellow as MG).</p>
+		<a href="flaon/flaon4-mozilla-gateway.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-04-22T19:45:00-08:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>, <a class='category' href=''>gateway</a>, <a class='category' href=''>smart home</a>
+	</div>
+	</div>
+</article>			
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/analiticsAPI.html">Analitics API script in python</a>
+	</h2>
+	<div class="entry-content">
+		<p>The purpose of this article is to help you get through the initial hurdles of API authorization with the Google API Client Libraries. As these libraries are under active development, this guide may occasionally fall out of sync with the latest client libraries.</p>
+		<a href="articles/analiticsAPI.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-02-22T12:42:00-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>
+	</div>
+	</div>
+</article>	
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/export-from-huawei-watchGT-to-gpx.html">Export from Huawei Watch GT to GPX file</a>
+	</h2>
+	<div class="entry-content">
+		<p>The following script will convert any HiTrack file from Huawei watch GT into a STRAVA readable GPX file.</p>
+		<p>Before converting, it's necessary to ensure to have all needed packages by running the command:</p><p><code>pip3 install -r requirements.txt</code>:</p>
+		<p>where the requirements are:</p>
+		<a href="articles/export-from-huawei-watchGT-to-gpx.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-02-22T12:42:00-08:00" pubdate data-updated="true">Feb 22<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>
+	</div>
+	</div>
+</article>		
+<article class="post">
+	<h2 class="title">
+		<a href="articles/connection-monitor.html">Python connection monitor</a>
+	</h2>
+	<div class="entry-content">
+		<p>Small python program for logging internet connection.</p>
+		<p>My flaON system is monitoring the internet connection using this kind of script: </p>
+		<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import urllib2, time, socket</span>
+<span class='line'>from datetime import datetime</span>
+<span class='line'></span>
+<span class='line'>previous_state = 'Monitoring started</span>
+<span class='line'>current_state = 'Monitoring started'</span>
+<span class='line'>readable_time = None</span>
+<span class='line'>time_now = None</span>
+<span class='line'>disconnected_time = None</span>
+<span class='line'></span>
+<span class='line'>def start_monitoring():</span>
+</code></pre></td></tr></table></div></figure>
+	<p>So far, this little script proved to be fast and reliable.</p>
+	<a href="articles/connection-monitor.html" class="more-link">Read on &rarr;</a>
+	</div>
+<div class="meta">
+	<div class="date">
+		<time datetime="2020-01-26T18:33:00-07:00" pubdate data-updated="true">Jan 26<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>python</a>, <a class='category' href=''>smart home</a>
+	</div>	
+</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/handling-realmmigrationneededexception-on-a-fresh-installation-on-android.html">Handling RealmMigrationNeededException on a fresh installation on Android</a>
+	</h2>
+	<div class="entry-content">
+		<p>A few days ego, I had just started using <a href="https://realm.io/">Realm</a> on Android and was having some troubles. I&#8217;d occasionally need to make a model change, and being early on in development I was happy to just delete the Realm and start again - in production you&#8217;d want to perform a migration so you don&#8217;t lose any user data.</p>
 
-				<!-- Content -->
-				<section class="content">
-					
-					<h1 class="section-title">Despre</h1>
-					<h2 class="subtitle"><i>"Progress, no perfection"</i></h2>
-					<!-- Columns -->
-					<div class="row">
-						<div class="one">
-							<p>Hi!. I am Flavius Cristiu, aka flaX1k, just an unknown cyber developer, a dreamer and an amateur cyclist, originally from a village named Gurahont, Arad county in Romania.</p>
-<p>I was educated at "Avram Iancu" highschool from Brad and Politehnica University from Timisoara, but I'm living in Gurahont village, where I found my peace and life's meaning.</p>
-<p>For me, programming is just a hobby and I code mostly in python, java, javascript and HTML. But I also have some passions for smarthomes, smart things, AI, new technologies, my mercedes car and cycling.</p>
-<p>I am employee at HT Est Division from Gurahont, Romania. </p>
-						</div>
-					</div>
+<p>However, the &#8220;delete and re-install&#8221; approach wasn&#8217;t working as expected - I kept getting a <code>RealmMigrationNeededException</code>:</p>
 
-				</section>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>io.realm.exceptions.RealmMigrationNeededException: RealmMigration must be provided</span></code></pre></td></tr></table></div></figure>
+<p>This doesn&#8217;t make sense! I should be able to uninstall an app and upon reinstalling it I should have a fresh slate to work with. As it turns out, not quite. I couldn&#8217;t figure out why at the time, but <a href="https://github.com/realm/realm-java/issues/1856">the workaround</a> was to simply add a <code>deleteRealmMigrationIfNeeded()</code> call to my Realm configuration when building it. I made a note to deal with this before release, and carried on my way.</p>
+		<a href="articles/handling-realmmigrationneededexception-on-a-fresh-installation-on-android.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2020-01-10T12:42:00-08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2020</time></div>
+	<div class="tags">
+		<a class='category' href=''>android</a>
+	</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">
+		<a href="articles/handling-outofmemoryerror-with-large-bitmaps-on-older-android-devices.html">Handling OutOfMemoryError with large bitmaps on older Android devices</a>
+	</h2>
+	<div class="entry-content">
+		<p>If you&#8217;ve ever worked with bitmaps on an Android device before, you&#8217;ve <a href="http://stackoverflow.com/questions/477572/strange-out-of-memory-issue-while-loading-an-image-to-a-bitmap-object">likely</a> <a href="http://stackoverflow.com/questions/14235287/suggestions-to-avoid-bitmap-out-of-memory-error?lq=1">encountered</a> the <a href="https://code.google.com/p/android/issues/detail?id=8488">dreaded</a> <code>OutOfMemoryError</code> &#8216;bitmap size exceeds VM budget&#8217;. This issue can present itself immediately when testing, however on older devices it may not manifest except in certain cases. The reason for this is as follows:</p>
 
-			</div>
+<blockquote><p>In addition, prior to Android 3.0 (API Level 11), the backing data of a bitmap was stored in native memory which is not released in a predictable manner, potentially causing an application to briefly exceed its memory limits and crash.</p><footer><strong>Android Developer Documentation</strong> <cite><a href='http://developer.android.com/training/displaying-bitmaps/cache-bitmap.html'>developer.android.com/training/&hellip;</a></cite></footer></blockquote>
+<p>Depending on what you&#8217;re doing, there is a way to get around this.</p>
+		<a href="articles/handling-outofmemoryerror-with-large-bitmaps-on-older-android-devices.html" class="more-link">Read on &rarr;</a>
+	</div>
+<div class="meta">
+	<div class="date">
+		<time datetime="2019-09-21T18:33:00-07:00" pubdate data-updated="true">Sep 21<span>st</span>, 2019</time></div>
+	<div class="tags">
+		<a class='category' href=''>android</a>, <a class='category' href=''>backup</a>, <a class='category' href=''>realm</a>
+	</div>	
+</div>
+</article>
+<article class="post">
+	<h2 class="title">
+		<a href="">Automating build numbers</a>
+	</h2>
+	<div class="entry-content">
+		<p>I recently encountered some problems where I was accidentallly duplicating build numbers for myBenz app. As I am a big fan of automation, I went about finding a way to avoid this human error and let the machines do the work for me.</p>
+		<a href="" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2019-08-30T13:21:00-07:00" pubdate data-updated="true">Aug 30<span>th</span>, 2019</time></div>
+		<div class="tags">
+			<a class='category' href=''>automation</a>, <a class='category' href=''>android</a>, <a class='category' href=''>xcode</a>, <a class='category' href=''>xcodebuild</a>
 		</div>
-
-<!-- Modal page: Subscribe -->
-<div id="modal2">
-	<div class="inner">
-		<!-- Modal toggle -->
-		<div class="social"><a href="#" id="modal2-close"><span class="fa fa-times" title="Close"></span></a></div>
-		<!-- Content -->
-		<section class="content">
-			<h1 class="section-title">Subscribe</h1>
-			<!-- Columns -->
-			<p class="subtitle">Notify Me When It's Ready</p>
-			<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<!-- subscribe form -->
-			<div id="subscribe" class="form-wrap">
-				<form action="subscribe.php" method="post" id="subscribe-form" novalidate="novalidate">
-					<p class="form-field">
-						<label for="subscribe_email" class="screen-reader-text">Your email</label>
-						<input type="text" name="subscribe_email" id="subscribe_email" placeholder="Your email">
-					</p>
-					<p class="form-submit">
-						<input type="submit" name="subscribe_submit" id="subscribe_submit" value="Subscribe">
-					</p>
-				</form>
-				<div class="loading" style="display: none;"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div><div class="success" style="display: none;"></div></div>
-		</section>
 	</div>
+</article>
+<article class="post">
+	<h2 class="title"><a href="articles/adding-google-play-services-to-an-android-studio-project.html">Adding Google Play Services to an Android Studio project</a>
+	</h2>
+	<div class="entry-content">
+		<p>Adding a support library to Android Studio is a bit different to how it&#8217;s done in Eclipse. Where you&#8217;d add a &#8216;project&#8217; in Eclipse, in Studio you add a &#8216;Module&#8217; (which is a sub-project of your overall application - similar to Projects in a Solution, if you&#8217;ve done any .NET development). In this post I detail how to add the Google Play Services project, but you should be able to follow the instructions to add any support library.</p>
+		<a href="articles/adding-google-play-services-to-an-android-studio-project.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2019-06-23T10:55:00-07:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2019</time></div>
+		<div class="tags">
+			<a class='category' href=''>android</a>, <a class='category' href=''>android-studio</a>
+		</div>
+	</div>
+</article>
+<article class="post">
+	<h2 class="title">		
+		<a href="articles/broken-jsonobject-creation-from-a-utf-8-input-string.html">Broken JSONObject creation from a UTF-8 input String</a>
+	</h2>
+	<div class="entry-content">
+		<blockquote><p>W/System.err(3873): org.json.JSONException: Value ﻿  of type java.lang.String cannot be converted to JSONObject</p></blockquote>
+		<p>Faced this issue, again today, working with my Android studio. I have build a system with build variants for different scenarios. To add a new intent, I just create a new folder, add the images and add a JSON config file to suit the new intent settings. I read from that file and into a JSON string (and then into a JSON object) something like this:</p>
+		<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>InputStream inStream = context.getResources().openRawResource(R.raw.local_config);
+</span><span class='line'>String json = IOUtils.toString(inStream);
+</span><span class='line'>JSONObject jsonObject = new JSONObject(json);</span></code></pre></td></tr></table></div></figure>
+		<p>Sometimes, I have to save non-ASCII characters. In this case, the file gets saved as UTF-8. Testing this isn&#8217;t a problem on my android devices - but my tester has twice come back to me now and said that it doesn&#8217;t work on our 2.3 device.</p>
+		<a href="articles/broken-jsonobject-creation-from-a-utf-8-input-string.html" class="more-link">Read on &rarr;</a>
+	</div>
+	<div class="meta">
+		<div class="date">
+			<time datetime="2019-12-17T06:04:00-08:00" pubdate data-updated="true">Apr 17<span>th</span>, 2019</time></div>
+		<div class="tags">
+			<a class='category' href=''>android</a>, <a class='category' href=''>java</a>, <a class='category' href=''>text-encoding</a>
+</div>	
 </div>
-
-<!-- Modal page: Jurnal -->
-<div id="modal3">
-	<div class="inner">
-		<!-- Modal toggle -->
-		<div class="social"><a href="#" id="modal3-close"><span class="fa fa-times" title="Close"></span></a></div>
-		<!-- Content -->
-		<section class="content">
-			<h1 class="section-title">Jurnal</h1>
-			<!-- Columns -->
-			<p class="subtitle">Notify Me When It's Ready</p>
-			<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<!-- subscribe form -->
-			<div id="subscribe" class="form-wrap">
-				<form action="subscribe.php" method="post" id="subscribe-form" novalidate="novalidate">
-					<p class="form-field">
-						<label for="subscribe_email" class="screen-reader-text">Your email</label>
-						<input type="text" name="subscribe_email" id="subscribe_email" placeholder="Your email">
-					</p>
-					<p class="form-submit">
-						<input type="submit" name="subscribe_submit" id="subscribe_submit" value="Subscribe">
-					</p>
-				</form>
-				<div class="loading" style="display: none;"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div><div class="success" style="display: none;"></div></div>
-		</section>
-	</div>
+</article>
 </div>
-</div>
-
-	<!-- Background overlay -->
-	<div class="body-bg">
-	
-	<!-- Sky -->
-	<!-- Cloud animation -->
-	<div id="cloud-animation">
-
-		<img src="files/cloud-01.png" alt="" id="cloud1">
-		<img src="files/cloud-02.png" alt="" id="cloud2">
-		<img src="files/cloud-03.png" alt="" id="cloud3">
-		<img src="files/cloud-04.png" alt="" id="cloud4">
-
-	</div>
-	</div>
-
-
-	<!-- Included JS Files -->
-	<script type="text/javascript" src="files/jquery-1.js"></script>
-	<script type="text/javascript" src="files/plugins.js"></script>
-	<script type="text/javascript" src="files/scripts.js"></script>
-
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 703px; width: 1536px; z-index: -999999; position: fixed;"><img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1536px; height: 864px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -80.5px;" src="files/bg-2.jpg"></div></body></html>
+<footer id="footer" class="inner">Copyright &copy; 2022 flax1k</footer>
+<script src="javascripts/slash.js"></script>
+<script src="javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+</body>
+</html>
