@@ -25,7 +25,7 @@ h3{font-size:1.3em}a{text-decoration:none;outline-width:0;color:#258fb8}
 #header a:hover{color:#258fb8}
 #header h1{float:left;font-weight:300;font-size:30px;margin-left:10px}
 @media screen and (max-width: 1040px){#header h1{float:none}}
-#main-nav{float:left;margin-left:30px}
+#main-nav{float:left;margin-left:5px}
 @media screen and (max-width: 1040px){#main-nav{float:none;margin-left:0;margin-top:15px}}
 @media screen and (max-width: 600px){#main-nav>ul{display:none}}
 #main-nav>ul>li{margin-left:50px;display:-moz-inline-stack;display:inline-block;vertical-align:middle;*vertical-align:auto;zoom:1;*display:inline}
