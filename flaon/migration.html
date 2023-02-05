@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flavius Cristiu @flaX1k</title>
+	<meta name="author" content="flax1k">
+	<meta name="description" content="Ever wonder why Mockito will occasionally give you an UnfinishedStubbingException even though you clearly finished the stubbing? For example, the &hellip;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="/atom.xml" rel="alternate" title="flax1k" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="../images/ban661.jpg" rel="shortcut icon">
+	<link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body>
+	<header id="header" class="inner"><img src="../images/icon-small.png" width="30px" height="30px" alt="flax1k avatar" itemprop="image"><h1><a href="../index.html">Flavius Cristiu</a></h1>
+		<nav id="main-nav"><ul class="main">
+			<li><a href="../cycling.html">Cycling</a></li>
+			<li><a href="../coding.html">Coding</a></li>
+			<li><a href="../mybenz.html">MyBenz</a></li>
+			<li><a href="../about.html">About</a></li>
+		</ul>
+		</nav>
+		<nav id="mobile-nav">
+			<div class="alignleft menu">
+				<a class="button">Menu</a>
+				<div class="container" style="display: none; width: 250px;"><ul class="main">
+					<li><a href="../cycling.html">Cycling</a></li>
+					<li><a href="../coding.html">Coding</a></li>
+					<li><a href="../mybenz.html">MyBenz</a></li>
+					<li><a href="../about.html">About</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="alignright search">
+					<a class="button"></a>
+					<div class="container">
+						<form action="http://google.com/search" method="get">
+							<input type="text" name="q" results="0">
+							<input type="hidden" name="q" value="">
+						</form>
+					</div>
+			</div>
+		</nav>
+		<nav id="sub-nav" class="alignright">
+			<div class="social">		
+				<a class="instagram" href="http://instagram.com/flax1000" title="Instagram">Instagram</a> 
+				<a class="twitter" href="http://twitter.com/flax1k" title="Twitter">Twitter</a>			
+				<a class="strava" href="https://www.strava.com/athletes/42797786" title="Strava">Strava</a>    
+			</div>
+			<form class="search" action="http://google.com/search" method="get">
+				<input class="alignright" type="text" name="q" results="0">
+				<input type="hidden" name="q" value="">
+			</form>
+		</nav>
+	</header>	
+<div id="content" class="inner">
+		<article class="post">
+		<h2 class="title">Raspberries PI's migration</h2>
+		<div class="entry-content">
+			<p>Kind of winter-spring cleanups has just happened to my bunch of raspberries pis. Those raspberries PIs (in this article will be known as RPI's) were the core of the FLAON system.</p>
+			<div class="clearfix"></div>
+			<p>First of all, the core of the FLAON system, the NodeRed has been reshaped with additional flows, subflows and palettes.</p>
+			<p>FlaON is still based on MQTT communication as the main communication mode between tablets, devices, PIs and NodeRed. I intend to use Zigbee2MQTT in the near future for a larger devices support. <br />All sensor devices have a dual communication mode based on mqtt and webthings.</p>
+			<h3>The Android app</h3>
+			<p>A few improvements have been made to android app flaon23, starting with the android's daydream as a screensaver, going through the android structure & layout and finishing with the connected services.</p>
+			<p>The old alert icons were moved from the bottom of the screensaver to the top of it. The daily title event (if there is any) is now displayed as a text at the right bottom of the screen. The weather icons are bigger and colorful.</p>
+			<p><img class ="article" src="../images/flaon23_screensaver.png" height="180px" width="397px"></p><div class="clearfix"></div>
+			<h3>Main screen design</h3>
+			<p>Somehow obsessed with a simple and clean design, the main screen design was changed. Now bigger text sizes, colorful backgrounds and images replace the old ones.</p>
+			<p>It's still used the materialcardview and constraintlayout but with a different approach.</p>
+			<div class="clearfix"></div>
+			<p><img class ="article" src="../images/flaon23_1.png" height="180px" width="397px"></p><div class="clearfix"></div>
+			<h3>Second screen design</h3>
+			<p>The second screen is divided in four group cattegories (using navigation).</p>
+			<p><img class ="article" src="../images/flaon23_2.png" height="180px" width="397px"></p><div class="clearfix"></div>
+			<p><img class ="article" src="../images/flaon23_3.png" height="180px" width="397px"></p><div class="clearfix"></div>
+			<p><img class ="article" src="../images/flaon23_4.png" height="180px" width="397px"></p><div class="clearfix"></div>
+			<p>The events, system messages and errors have their own class and recyclerView.adapter. The sound notification was reintegrated (eliminated in a previous version of flaon) and it's based on TSS (english)</p>
+			<div class="clearfix"></div>
+		</div>
+		<div class="meta">
+				<div class="date">
+					<time datetime="0" pubdate data-updated="true">Jan 24<span>th</span>, 2023</time>
+				</div>
+				<div class="tags">
+					<a class='category' href=''>flaon</a>, <a class='category' href=''>hobbies</a>, <a class='category' href=''>smart home</a>
+				</div>
+			</div>
+	</article>
+</div>
+<footer id="footer" class="inner">Copyright &copy; 2023 flax1k</footer>
+<script src="../javascripts/slash.js"></script>
+<script src="../javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script>
+</body>
+</html>
