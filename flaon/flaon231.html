@@ -60,13 +60,12 @@
 		<article class="post">
 		<h2 class="title">flaON update v23.2</h2>
 		<div class="entry-content">
-			<p>Long time no post in here, so here are the latest updates to flaON project, that now has reached the release v23.2. <br />The biggest change is that now I'm using the OPENHAB gateway instead of Webthings gateway from Mozilla. The latest version (v23.2) of flaON project was released a few days ago with some improvements for remote control, design and functionality.</p>
-			<div class="clearfix"></div>
+			<p>Long time no post in here, so here are the latest updates of the flaON project, that now has reached the v23.2. The bigest change is that I've switched to API websockets communication instead of MQTT and my house is using NodeRed as gateway instead of Webthings gateway from Mozilla.</p>			<div class="clearfix"></div>
 			<h3>The gateway</h3>
-			<p>I used Webthing gateway from the Mozilla as the main gateway for a very long time and it worked decent. But MW has some restrictions, some limitations, so I moved to Openhab gateway.<br />It has so many add-ons, so many forum threads and discussions, and is much, much more advanced than Webthing gateway.<br />
+			<p>I used Webthing gateway from the Mozilla as the main gateway for a very long time and it worked decent. But MW has some restrictions, some limitations, so I dropped the gateway from Mozilla and moved to NodeRed as main gateway.<br />It has so many add-ons, so many forum threads and discussions, and is much, much more advanced than Webthing gateway.<br />
 			I am still a newbie using this gateway but so far I like it very much and fullfill my expectations.</p>
 			<h3>The communication protocol</h3>
-			<p>All my house sensors communicate with the new gateway from openHAB using the MQTT protocol. It's light, fast and secure. The communication between gateway and the wall mounted tablets is made using the OpenHAB REST API and websockets API.</p>
+			<p>All my house sensors still communicate with the new gateway from NodeRed using the MQTT protocol. It's light, fast and secure. The communication between gateway and the wall mounted tablets is made using the websockets API that link with NodeRed.</p>
 			<h3>The design</h3>
 			<p>The android app design has slightly changed. Below is the latest UI interface for the tablets:</p>
 			<p><img class ="article" src="../images/flaon231_1.png" height="180px" width="397px"></p><div class="clearfix"></div>
